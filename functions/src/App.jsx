@@ -1,8 +1,8 @@
 import React from 'react'
 
-function clickbtn(){
-  console.log("got clicked")
-}
+// function clickbtn(){
+//   console.log("got clicked")
+// }
 
 // function changetrack(e){
 //   // log the current input value
@@ -17,15 +17,19 @@ function clickbtn(){
 //   )
 // }
 
-function changetrack(e){
-  // log the current input value
-  console.log(e.target.value)
-}
+// function changetrack(e){
+//   // log the current input value
+//   console.log(e.target.value)
+// }
 
+
+function movemouse(elem){
+  console.log(elem.target);
+}
 const App = () => {
   return (
     <div>
-      <input onChange= {changetrack} type='text' placeholder='Enter name' />
+      <div onMouseMove={movemouse} className='h-100 w-100 bg-emerald-500'></div>
     </div>
   )
 }
